@@ -4,6 +4,7 @@
 - O usuario se cadastra, criando um arquivo com os dados dele
 
 # Aprendizado
+- Interface com Tkinter
 - POO em python
 - Manipulação de arquivos em python
 - Validações com Regular Expressions
