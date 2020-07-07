@@ -1,4 +1,6 @@
 import tkinter as tk
+import cadastrar
+import ler
 
 root = tk.Tk()
 
@@ -7,7 +9,13 @@ def text_menu(root, text, color, linha, coluna):
     op_label.grid(row=linha, column=coluna)
 
 def opcoes(stringvar: tk.StringVar, button: tk.Button):
-    pass
+    op = stringvar.get()
+    if op == '1':
+        cadastrar.cadastrar()
+    elif op == '2':
+        ler.ler()
+        
+
 
 main_title = tk.Label(root, text='Cadastre-se', bg='#fff', font=('Helvetica',12,'bold'))
 main_title.grid(row=0, column=0, pady=(0, 20))
