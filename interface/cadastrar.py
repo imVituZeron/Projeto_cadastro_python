@@ -1,5 +1,6 @@
+from random import randint
 import tkinter as tk
-
+#from banco import cadastro
 
 def campo(root, borda, textstringvar, linha, coluna):
     entry = tk.Entry(root, bd=borda, textvariable=textstringvar)
@@ -9,11 +10,13 @@ def texto(root, text, color, linha, coluna):
     text = tk.Label(root, text=text, bg=color)
     text.grid(row=linha, column=coluna)
 
-def create_file(name, year, cpf, school, email, phone):
-    pass
+#def create_file(id, name, year, cpf, school, email, phone):
+#    cadastro(id, name, year, cpf, school, email, phone)
 
 def cadastrar():
     root = tk.Tk()
+
+    id = randint(10000, 99999)
 
     texto(root, 'Name:','#fff', 1,0)
     name_stringvar = tk.StringVar()
@@ -41,7 +44,7 @@ def cadastrar():
 
     button = tk.Button(root, text='Confirmar')
     button.grid(row=7, column=1)
-    button.config(command=lambda: create_file(name_stringvar, year_stringvar,cpf_stringvar,school_stringvar, email_stringvar, phone_stringvar))
+    button.config(command=lambda: create_file(id,name_stringvar, year_stringvar,cpf_stringvar,school_stringvar, email_stringvar, phone_stringvar))
 
     root.title('Dados pessoais')
     root.config(bg='#fff', padx=20, pady=20)
