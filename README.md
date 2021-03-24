@@ -1,6 +1,6 @@
 # PROJETINHO SOMENTE PARA APRENDIZADO
 
-# O projeto é um acadastro de pessoas em python
+# O projeto é um cadastro de pessoas em python
 - O usuario se cadastra, criando um arquivo com os dados dele
 
 # Aprendizado
